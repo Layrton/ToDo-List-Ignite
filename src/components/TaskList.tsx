@@ -6,7 +6,7 @@ import { TaskInterface } from './Body'
 
 
 interface TasksAndDeleteProps {
-    tasksData: TaskInterface,
+    tasksData: TaskInterface[],
     onDeleteTask: (task: string) => void;
     onCompleteTask: (task: string) => void;
 }
