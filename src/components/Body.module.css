@@ -1,0 +1,83 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 56px;
+    align-items:center;
+    justify-content: center;
+    margin-top: -28px;
+    height: 100%;
+}
+
+.body form {
+    gap: 8px;
+    height: 100%;
+    display: flex;
+    margin-bottom: 64px;
+    width: 736px;
+}
+
+.body > form > textarea {
+    height: 54px;
+    flex: 1;
+    border-radius: 8px;
+    background: var(--gray-500);
+    resize: none;
+    outline-color: var(--gray-700);
+    /* outline-style: solid; */
+    color: var(--gray-300);
+    font-size: 1rem;
+    padding: 16px;
+    line-height: 20px;
+}
+
+.body form button[type=submit] {
+    border-radius: 8px;
+    padding: 16px;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s
+}
+
+.body button[type=submit]:not(:disabled):hover {
+    background: var(--blue)
+}
+
+.tasks {
+    width: 736px;
+}
+
+.tasks > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.createdTasks {
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.finishedTasks {
+    color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.counter {
+    background: var(--gray-400);
+    border-radius: 999px;
+    padding: 2px 8px 2px 8px;
+    color: var(--gray-200)!important;
+}
+

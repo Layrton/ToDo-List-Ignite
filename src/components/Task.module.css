@@ -1,0 +1,48 @@
+.task {
+    background: var(--gray-400);
+    height: 72px;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    justify-content: space-between;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    gap: 12px;
+}
+
+.container input {
+    height: 17.45px;
+    width: 17.45px;
+}
+
+.container svg {
+    height: 17.45px;
+    width: 17.45px;
+    color: var(--purple)
+}
+
+.container span {
+    color: var(--gray-100);
+    font-size: 1rem;
+}
+
+.deleteButton {
+    cursor: pointer;
+
+}
+
+.radioContainer {
+    background: transparent;
+}
+
+.completedTask {
+    text-decoration-line: line-through;
+    color: var(--gray-300)!important;
+}
