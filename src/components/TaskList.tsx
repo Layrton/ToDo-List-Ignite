@@ -16,12 +16,10 @@ export function TaskList( { tasksData, onDeleteTask, onCompleteTask }:TasksAndDe
     const isThereMoreThanOneTask = tasksData.length
     return(
         <div className={styles.taskList}>
-
-
                 {
                     isThereMoreThanOneTask 
-                    ? <div className={styles.existingTasks}>;
-                    {tasksData.map((task:TaskInterface) => {
+                    ?  <div className={styles.existingTasks}>;
+                        {tasksData.map((task:TaskInterface) => {
                         return (
                             <Task 
                                 key={task.id}
@@ -33,23 +31,13 @@ export function TaskList( { tasksData, onDeleteTask, onCompleteTask }:TasksAndDe
                             />
                         )
                     })}
-                    </div>
+                        </div>
                     : <div className={styles.emptyTaskList}>
-                    <img src={clipboardSVG} alt="Nenhuma tarefa cadastrada." />
-                    <p>Você ainda não tem tarefas cadastradas</p>
-                    <p>Crie tarefas e organize seus itens a fazer</p>
+                        <img src={clipboardSVG} alt="Nenhuma tarefa cadastrada." />
+                        <p>Você ainda não tem tarefas cadastradas</p>
+                        <p>Crie tarefas e organize seus itens a fazer</p>
                 </div>
-
-
                 }
-
-
-
-
-                
-                
-                
-                
         </div>
     )
 }

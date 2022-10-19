@@ -23,7 +23,6 @@
     background: var(--gray-500);
     resize: none;
     outline-color: var(--gray-700);
-    /* outline-style: solid; */
     color: var(--gray-300);
     font-size: 1rem;
     padding: 16px;

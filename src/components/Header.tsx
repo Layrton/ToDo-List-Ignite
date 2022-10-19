@@ -4,7 +4,9 @@ import todoLogo from '../assets/todo_logo.svg'
 export function Header() {
     return(
         <header className={styles.header}>
-            <img src={todoLogo} alt="" />
+            <a href="#">
+                <img src={todoLogo} alt="" />
+            </a>
         </header>
     )
 }

@@ -7,7 +7,6 @@
     flex-direction: row;
     gap: 18px;
     justify-content: space-between;
-    
 }
 
 .container {
@@ -35,7 +34,12 @@
 
 .deleteButton {
     cursor: pointer;
+    transition: 0.2s;
+    color: var(--gray-300)
+}
 
+.deleteButton:hover {
+    color: red;
 }
 
 .radioContainer {
